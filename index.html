@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sahira's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4231346c72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="">Sahira Sheikh</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Introduction">Introduction</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Mean">Mean for different data series</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Combined">Combined Mean</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Demerits">Demerits</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Code">Python Code</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Introduction to Mean</h1>
+
+    </div>
+    <div class="middle-container">
+        <div class="skills" id="Introduction">
+            <h2>Introduction to mean</h2>
+            <div class="skill-row">
+                <p class="web-description">
+                    <h3> Types of data series </h3>
+                    There are different types of data series<br>
+                    <ol>
+                        <li> Individual series: An array of individual elements (data in the rawest form) <br> Eg: [1,2,3,4,5,6,7,8,9...]</li>
+                        <li> Discrete Series: A tabular representation of the individual series (presented in a neater way) <br>
+                            Eg: <br>
+                            <img src="https://i.ibb.co/kg4m1s6/Discrete-series.jpg" alt="Discrete-series" border="0"><br>
+                        </li>
+                        <li> Continous Series: Data is represented in the form of class intervals. Not very precise as it does not provide the value counts for each observation but it separates them into class intervals and gives the frequency of each class interval (neatest form but least precise) <br>
+                            Eg:<br>
+                            <img src="https://i.ibb.co/q9Bn5g0/continous-series.jpg" alt="continous-series" border="0"> <br>
+                        </li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="skill-row" id = "Mean">
+        <h2> Finding mean of different types of data series</h2>
+        <p>
+            <h3>Individual Series:</h3>
+            <p class="web-description"> 
+                For finding the mean of individual series, you sum all the elements and then divide it by the number of elements in the data series <br>
+                Formula for mean of individual series is given by<br>
+                <img src="https://i.ibb.co/mJy6jcS/mean-individual.jpg" alt="mean-individual" border="0"></p>
+            <h3>Discrete Series</h3>
+            <p class="web-description">
+                For finding mean of discrete series, the sum of all the observations can be given by the product of x with n because discrete series is a tabular representation of the value with its corresponding frequency. Hence the n will be given by the sum of f<br>
+                Formula for mean of discrete series is given by<br>
+                <img src="https://i.ibb.co/zGMKcDx/mean-discrete.jpg" alt="mean-discrete" border="0">
+            </p>
+            <h3>Continous Series</h3>
+            <p class="web-description">
+                For continuous series, the midpoint of each class interval is considered as the representative of the class interval. Since continuous data is also a tabular form of data, hence we take the product of F with the midpoint of the class interval<br>
+                Hence the formula of mean is given by<br>
+                <img src="https://i.ibb.co/XJmZ9Tf/mean-continous.jpg" alt="mean-continous" border="0">  <br> Where X̄ is the midpoint of the class interval
+             </p>
+    </div>
+    <hr>
+    <div class="skill-row" id = "Combined">
+        <h2>Combined Mean</h2>
+        <p class="web-description">
+            Combined mean is used when we want to compare two data series whose number of observations and the mean is given to us. This is used for combining the data series and representing it as a single data series for further analysis<br>
+            The formula for combined mean is given by<br>
+            <img src="https://i.ibb.co/tXfdm4w/combined-mean.jpg" alt="combined-mean" border="0"><br>
+            Where<br>
+            <ol> 
+                <li> n<sub>1</sub>– Number of observations in the first series</li>
+                <li> n<sub>2</sub>– Number of observations in the second series</li>
+                <li> μ<sub>1</sub> - Mean of first series </li> 
+                <li> μ<sub>2</sub> - Mean of second series </li> 
+            </ol>
+        </p>
+    </div>
+    <div class="skill-row" id = "Demerits">
+        <h2>Demerits of mean</h2>
+        <p class="web-description">
+            Here are the demerits of using mean as a descriptive statistic for calculations<br>
+            <ol>
+                <li> Affected by outliers so a single outlier can increase the mean significantly hence it does not give you an accurate idea about the data</li>
+                <li>Can’t be calculated for open ended intervals (eg below 40 or above 60)</li>
+                <li>Can’t be calculated for NA values</li>
+        </p>
+        <p class="web-description">
+            Mean is a good descriptive statistic to replace the missing values with it in QUANTITATIVE datasets
+        </p>
+    </div>
+    <div class="skill-row" id = "Code">
+        <h2>Python code for finding mean</h2>
+        <script src="https://gist.github.com/sheikh-sahira1703/98818a7ead6abbfa2731438cd6d96b8a.js"></script>
+    </div>
+    </div>
+
+    <hr>
+    <div class="contact-me" id="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Contact Me</h3>
+        <p class="contact">You can contact me via the button given below. Feel free to contact me. Suggestions and corrections are welcomed warmly by me.</p>
+        <a class="btn btn-dark" href="mailto:shiekh_sahira1703@hotmail.com">CONTACT ME</a>
+    </div>
+    <div class="bottom-container">
+        <div class="social-media">
+            <a class="footer-link" href="https://instagram.com/sahira_speaks?igshid=712oqk2r0kfe"><i class="fab fa-instagram"></i>
+                My Instagram profile
+            </a>
+            <a class="footer-link" href="https://github.com/sheikh-sahira1703"><i class="fab fa-github"></i>
+                GitHub Profile
+            </a>
+            <br>
+            <i class="fas fa-map-pin copyright"></i>
+            <p class="copyright">Mumbai, MH</p>
+        </div>
+
+
+
+        <p class="copyright">© Aayushmaan Jain.</p>
+    </div>
+</body>
+
+</html>
